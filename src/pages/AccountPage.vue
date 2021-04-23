@@ -1,7 +1,7 @@
 <template>
-  <div class="about text-center">
-    <h1>Welcome {{ account.name }}</h1>
-    <img class="rounded" :src="account.picture" alt="" />
+  <div class="about">
+    <img class="rounded-circle" :src="account.picture" alt="" />
+    <h3>{{ account.name }}</h3>
     <p>{{ account.email }}</p>
   </div>
 </template>
@@ -21,6 +21,6 @@ export default {
 
 <style scoped>
 img {
-  max-width: 100px;
+  max-width: 200px;
 }
 </style>
