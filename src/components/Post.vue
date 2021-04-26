@@ -1,7 +1,12 @@
 <template>
   <div class="post-photo col-md-3">
     <div class=" position-relative">
-      <img :src="post.imgUrl" alt="Post Image">
+      <div v-if="post.imgUrl" class="py-4">
+        <img id="postPic" :src="post.imgUrl" alt="Post Image" />
+      </div>
+      <div v-else class="py-4">
+        <img src="https://via.placeholder.com/100/000000/ffffff/?text=CodeWorks" alt="Alt image is broken" />
+      </div>
       <div class="text-left">
         <h4>{{ post.body }}</h4>
       </div>

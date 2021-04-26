@@ -1,5 +1,10 @@
-@import "./_variables.scss";
-@import "bootstrap";
+// @import "./_variables.scss";
+// @import "bootstrap";
+
+@import "~bootswatch/dist/superhero/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/superhero/bootswatch";
+
 @import "./_transitions.scss";
 @import "./_overrides.scss";
 
